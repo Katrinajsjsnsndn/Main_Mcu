@@ -1,0 +1,15 @@
+main_mcu\lv_mem_core_micropython.o: C:/Keil_v5/ARM/PACK/LVGL/lvgl/9.3.0/src/stdlib/micropython/lv_mem_core_micropython.c
+main_mcu\lv_mem_core_micropython.o: ./RTE/LVGL/lv_conf_cmsis.h
+main_mcu\lv_mem_core_micropython.o: .\RTE\_Main_Mcu\RTE_Components.h
+main_mcu\lv_mem_core_micropython.o: .\RTE\_Main_Mcu\Pre_Include_Global.h
+main_mcu\lv_mem_core_micropython.o: C:/Keil_v5/ARM/PACK/LVGL/lvgl/9.3.0/src/stdlib/micropython/../lv_mem.h
+main_mcu\lv_mem_core_micropython.o: C:/Keil_v5/ARM/PACK/LVGL/lvgl/9.3.0/src/stdlib/micropython/../../lv_conf_internal.h
+main_mcu\lv_mem_core_micropython.o: C:/Keil_v5/ARM/PACK/LVGL/lvgl/9.3.0/src/stdlib/micropython/../../lv_conf_kconfig.h
+main_mcu\lv_mem_core_micropython.o: C:/Keil_v5/ARM/PACK/LVGL/lvgl/9.3.0/src/stdlib/micropython/../lv_string.h
+main_mcu\lv_mem_core_micropython.o: C:/Keil_v5/ARM/PACK/LVGL/lvgl/9.3.0/src/stdlib/micropython/../../misc/lv_types.h
+main_mcu\lv_mem_core_micropython.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+main_mcu\lv_mem_core_micropython.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+main_mcu\lv_mem_core_micropython.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+main_mcu\lv_mem_core_micropython.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+main_mcu\lv_mem_core_micropython.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+main_mcu\lv_mem_core_micropython.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
