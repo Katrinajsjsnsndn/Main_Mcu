@@ -30,7 +30,8 @@
 #include "OLED.h"
 #include "lcd.h"
 #include "test code.h"
-
+#include "lvgl.h" 
+#include "lv_port_disp_template.h"
 
 /* USER CODE END Includes */
 
@@ -89,7 +90,7 @@ void vApplicationTickHook( void )
    added here, but the tick hook is called from an interrupt context, so
    code must not attempt to block, and only the interrupt safe FreeRTOS API
    functions can be used (those that end in FromISR()). */
-//	lv_tick_inc(1);         //lvgl heart beat
+	lv_tick_inc(1);         //lvgl heart beat
 }
 /* USER CODE END 3 */
 
@@ -176,12 +177,12 @@ __weak void StartTask02(void *argument)
 		LCD_Display_Dir(USE_LCM_DIR);		 		//��Ļ����
 
 		LCD_Clear(WHITE);		//����
-		LCD_DrawRectangle(40,40,280,150);
-	  osDelay(5);
-		LCD_DrawRectangle(230,160,280,190);
-		osDelay(5);
+//		LCD_DrawRectangle(40,40,280,150);
+//	  osDelay(5);
+//		LCD_DrawRectangle(230,160,280,190);
+//		osDelay(5);
 
-		LCD_DrawRectangle(40,160,90,190);
+//		LCD_DrawRectangle(40,160,90,190);
 
 //	main_test("IC:ST7789");		  //������ҳ
 //	Color_Test();								//��ɫ����
@@ -192,30 +193,20 @@ __weak void StartTask02(void *argument)
 //	Pic_test();									//ͼƬ����
 //	Switch_test();							//��ʾ���ز���
 //	Rotate_Test();							//��ת����
-
-	 // 初始化LVGL
-//    lv_init();
-//    lv_port_disp_init();
-//		char* github_addr = "https://gitee.com/W23";
-//		lv_obj_t * label = lv_label_create(lv_scr_act());
-//    lv_label_set_recolor(label, true);
-//    lv_label_set_long_mode(label, LV_LABEL_LONG_SCROLL_CIRCULAR); /*Circular scroll*/
-//    lv_obj_set_width(label, 50);
-//    lv_label_set_text_fmt(label, "#ff0000 Gitee: %s#", github_addr);
-//    lv_obj_align(label, LV_ALIGN_CENTER, 0, 10);
-//	
-//    lv_obj_t * label2 = lv_label_create(lv_scr_act());
-//    lv_label_set_recolor(label2, true);
-//    lv_label_set_long_mode(label2, LV_LABEL_LONG_SCROLL_CIRCULAR); /*Circular scroll*/
-//    lv_obj_set_width(label2, 120);
-//    lv_label_set_text_fmt(label2, "#ff0000 Hello# #0000ff world !123456789#");
-//    lv_obj_align(label2, LV_ALIGN_CENTER, 0, -10);
+	lv_init();
+	lv_port_disp_init();
+	lv_obj_t* btn = lv_btn_create(lv_scr_act()); 
+	lv_obj_set_pos(btn, 100, 100);
+	lv_obj_set_size(btn, 120, 50);
+	lv_obj_t* label = lv_label_create(btn);
+	lv_label_set_text(label, "Button");
+	lv_obj_center(label);
  /* Infinite loop */
   for(;;)
   {
 		      
 		//RS485_Master_SendReadCmd(0x01);
-		//lv_task_handler(); // 处理LVGL任务
+		lv_task_handler(); // 处理LVGL任务
     osDelay(5);
   }
   /* USER CODE END StartTask02 */

@@ -30,11 +30,13 @@ Build target 'Main_Mcu'
 compiling freertos.c...
 ./rs485/rs485.h(41): warning:  #1-D: last line of file ends without a newline
   #endif
-../Core/Src/freertos.c: 1 warning, 0 errors
+.\lvgl\src\../src/misc/../lv_conf_internal.h(46): warning:  #161-D: unrecognized #pragma
+          #pragma message("Possible failure to include lv_conf.h, please read the comment in this file if you get errors")
+../Core/Src/freertos.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=16252 RO-data=552 RW-data=3412 ZI-data=20932  
+Program Size: Code=156740 RO-data=18632 RW-data=676 ZI-data=77428  
 FromELF: creating hex file...
-"Main_Mcu\Main_Mcu.axf" - 0 Error(s), 1 Warning(s).
+"Main_Mcu\Main_Mcu.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -57,7 +59,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:07
 </pre>
 </body>
 </html>
