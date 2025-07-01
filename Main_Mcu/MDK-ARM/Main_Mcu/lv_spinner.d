@@ -6,7 +6,7 @@ main_mcu\lv_spinner.o: lvgl\src\extra\widgets\spinner\../../../../src/misc/lv_lo
 main_mcu\lv_spinner.o: lvgl\src\extra\widgets\spinner\../../../../src/misc/../lv_conf_internal.h
 main_mcu\lv_spinner.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_spinner.o: lvgl\src\extra\widgets\spinner\../../../../src/misc/../lv_conf_kconfig.h
-main_mcu\lv_spinner.o: .\lvgl\lv_conf.h
+main_mcu\lv_spinner.o: ./lvgl/lv_conf.h
 main_mcu\lv_spinner.o: lvgl\src\extra\widgets\spinner\../../../../src/misc/lv_types.h
 main_mcu\lv_spinner.o: lvgl\src\extra\widgets\spinner\../../../../src/misc/lv_timer.h
 main_mcu\lv_spinner.o: lvgl\src\extra\widgets\spinner\../../../../src/misc/../hal/lv_hal_tick.h

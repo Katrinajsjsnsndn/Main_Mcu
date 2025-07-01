@@ -4,7 +4,7 @@ main_mcu\lv_obj_tree.o: lvgl\src\core\lv_obj.h
 main_mcu\lv_obj_tree.o: lvgl\src\core\../lv_conf_internal.h
 main_mcu\lv_obj_tree.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_obj_tree.o: lvgl\src\core\../lv_conf_kconfig.h
-main_mcu\lv_obj_tree.o: .\lvgl\lv_conf.h
+main_mcu\lv_obj_tree.o: ./lvgl/lv_conf.h
 main_mcu\lv_obj_tree.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 main_mcu\lv_obj_tree.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 main_mcu\lv_obj_tree.o: lvgl\src\core\../misc/lv_style.h

@@ -32,7 +32,7 @@
 "main_mcu\stream_buffer.o"
 "main_mcu\tasks.o"
 "main_mcu\timers.o"
-"main_mcu\cmsis_os2.o"
+"main_mcu\cmsis_os.o"
 "main_mcu\heap_4.o"
 "main_mcu\port.o"
 "main_mcu\rs485.o"
@@ -208,6 +208,7 @@
 "main_mcu\lv_tileview.o"
 "main_mcu\lv_win.o"
 "main_mcu\lv_extra.o"
+"main_mcu\lvgl_task.o"
 --strict --scatter "Main_Mcu\Main_Mcu.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -29,6 +29,8 @@
 #define FRAME_START_BYTE 0xAA
 #define MAX_FRAME_LENGTH 32
 
+#include "lvgl_task.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -106,16 +108,19 @@ int main(void)
 
    UART_Start_Receive_DMA(&huart3, receive_data_R, 80);
 	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,0);
+	 
+	 
+	 
+
+		lvgl_task();
+
   /* USER CODE END 2 */
 
-  /* Init scheduler */
-  osKernelInitialize();
-
   /* Call init function for freertos objects (in cmsis_os2.c) */
-  MX_FREERTOS_Init();
+//  MX_FREERTOS_Init();
 
-  /* Start scheduler */
-  osKernelStart();
+//  /* Start scheduler */
+//  osKernelStart();
 
   /* We should never get here as control is now taken by the scheduler */
 
@@ -126,6 +131,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
   }
   /* USER CODE END 3 */
 }
@@ -176,7 +182,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-// DMA������ɻص�����
+
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
 {
     if (huart->Instance == USART1)
@@ -184,7 +190,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
         uint8_t receivedByte = rxBuffer[rxIndex];
         if (rxIndex == 0 && receivedByte != FRAME_START_BYTE)
         {
-            // �����һ���ֽڲ�����ʼ�ֽڣ��������ֽ�
             HAL_UART_Receive_DMA(&huart1, &rxBuffer[rxIndex], 1);
             return;
         }

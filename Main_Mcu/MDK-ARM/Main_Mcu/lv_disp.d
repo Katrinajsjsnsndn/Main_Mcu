@@ -8,7 +8,7 @@ main_mcu\lv_disp.o: lvgl\src\core\../hal/lv_hal.h
 main_mcu\lv_disp.o: lvgl\src\core\../hal/../draw/lv_draw.h
 main_mcu\lv_disp.o: lvgl\src\core\../hal/../draw/../lv_conf_internal.h
 main_mcu\lv_disp.o: lvgl\src\core\../hal/../draw/../lv_conf_kconfig.h
-main_mcu\lv_disp.o: .\lvgl\lv_conf.h
+main_mcu\lv_disp.o: ./lvgl/lv_conf.h
 main_mcu\lv_disp.o: lvgl\src\core\../hal/../draw/../misc/lv_style.h
 main_mcu\lv_disp.o: lvgl\src\core\../hal/../draw/../misc/../font/lv_font.h
 main_mcu\lv_disp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

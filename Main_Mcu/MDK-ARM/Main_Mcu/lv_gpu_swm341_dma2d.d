@@ -4,7 +4,7 @@ main_mcu\lv_gpu_swm341_dma2d.o: lvgl\src\draw\swm341_dma2d\../../misc/lv_color.h
 main_mcu\lv_gpu_swm341_dma2d.o: lvgl\src\draw\swm341_dma2d\../../misc/../lv_conf_internal.h
 main_mcu\lv_gpu_swm341_dma2d.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_gpu_swm341_dma2d.o: lvgl\src\draw\swm341_dma2d\../../misc/../lv_conf_kconfig.h
-main_mcu\lv_gpu_swm341_dma2d.o: .\lvgl\lv_conf.h
+main_mcu\lv_gpu_swm341_dma2d.o: ./lvgl/lv_conf.h
 main_mcu\lv_gpu_swm341_dma2d.o: lvgl\src\draw\swm341_dma2d\../../misc/lv_assert.h
 main_mcu\lv_gpu_swm341_dma2d.o: lvgl\src\draw\swm341_dma2d\../../misc/lv_log.h
 main_mcu\lv_gpu_swm341_dma2d.o: lvgl\src\draw\swm341_dma2d\../../misc/lv_types.h

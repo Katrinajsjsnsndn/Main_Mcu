@@ -5,7 +5,7 @@ main_mcu\lv_theme_default.o: lvgl\src\extra\themes\default\../../../../src/misc/
 main_mcu\lv_theme_default.o: lvgl\src\extra\themes\default\../../../../src/misc/../lv_conf_internal.h
 main_mcu\lv_theme_default.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_theme_default.o: lvgl\src\extra\themes\default\../../../../src/misc/../lv_conf_kconfig.h
-main_mcu\lv_theme_default.o: .\lvgl\lv_conf.h
+main_mcu\lv_theme_default.o: ./lvgl/lv_conf.h
 main_mcu\lv_theme_default.o: lvgl\src\extra\themes\default\../../../../src/misc/lv_types.h
 main_mcu\lv_theme_default.o: lvgl\src\extra\themes\default\../../../../src/misc/lv_timer.h
 main_mcu\lv_theme_default.o: lvgl\src\extra\themes\default\../../../../src/misc/../hal/lv_hal_tick.h

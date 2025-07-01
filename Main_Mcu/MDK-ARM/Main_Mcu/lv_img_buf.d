@@ -7,7 +7,7 @@ main_mcu\lv_img_buf.o: lvgl\src\draw\../misc/lv_color.h
 main_mcu\lv_img_buf.o: lvgl\src\draw\../misc/../lv_conf_internal.h
 main_mcu\lv_img_buf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_img_buf.o: lvgl\src\draw\../misc/../lv_conf_kconfig.h
-main_mcu\lv_img_buf.o: .\lvgl\lv_conf.h
+main_mcu\lv_img_buf.o: ./lvgl/lv_conf.h
 main_mcu\lv_img_buf.o: lvgl\src\draw\../misc/lv_assert.h
 main_mcu\lv_img_buf.o: lvgl\src\draw\../misc/lv_log.h
 main_mcu\lv_img_buf.o: lvgl\src\draw\../misc/lv_types.h

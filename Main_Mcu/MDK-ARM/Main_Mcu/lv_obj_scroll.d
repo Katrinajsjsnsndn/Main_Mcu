@@ -4,7 +4,7 @@ main_mcu\lv_obj_scroll.o: lvgl\src\core\../misc/lv_area.h
 main_mcu\lv_obj_scroll.o: lvgl\src\core\../misc/../lv_conf_internal.h
 main_mcu\lv_obj_scroll.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_obj_scroll.o: lvgl\src\core\../misc/../lv_conf_kconfig.h
-main_mcu\lv_obj_scroll.o: .\lvgl\lv_conf.h
+main_mcu\lv_obj_scroll.o: ./lvgl/lv_conf.h
 main_mcu\lv_obj_scroll.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 main_mcu\lv_obj_scroll.o: lvgl\src\core\../misc/lv_anim.h
 main_mcu\lv_obj_scroll.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

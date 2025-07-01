@@ -6,7 +6,7 @@ main_mcu\lv_font_loader.o: lvgl\src\font\../../lvgl.h
 main_mcu\lv_font_loader.o: lvgl\src\font\../../src/misc/lv_log.h
 main_mcu\lv_font_loader.o: lvgl\src\font\../../src/misc/../lv_conf_internal.h
 main_mcu\lv_font_loader.o: lvgl\src\font\../../src/misc/../lv_conf_kconfig.h
-main_mcu\lv_font_loader.o: .\lvgl\lv_conf.h
+main_mcu\lv_font_loader.o: ./lvgl/lv_conf.h
 main_mcu\lv_font_loader.o: lvgl\src\font\../../src/misc/lv_types.h
 main_mcu\lv_font_loader.o: lvgl\src\font\../../src/misc/lv_timer.h
 main_mcu\lv_font_loader.o: lvgl\src\font\../../src/misc/../hal/lv_hal_tick.h

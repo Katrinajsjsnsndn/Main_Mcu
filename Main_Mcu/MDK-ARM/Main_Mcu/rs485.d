@@ -33,7 +33,7 @@ main_mcu\rs485.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 main_mcu\rs485.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 main_mcu\rs485.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 main_mcu\rs485.o: ./bsp/struct_typedef.h
-main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
+main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 main_mcu\rs485.o: ../Core/Inc/FreeRTOSConfig.h
 main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
@@ -43,7 +43,10 @@ main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_C
 main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+main_mcu\rs485.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 main_mcu\rs485.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 main_mcu\rs485.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 main_mcu\rs485.o: ../Core/Inc/usart.h

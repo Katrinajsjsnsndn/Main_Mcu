@@ -2,7 +2,7 @@ main_mcu\lv_tlsf.o: lvgl\src\misc\lv_tlsf.c
 main_mcu\lv_tlsf.o: lvgl\src\misc\../lv_conf_internal.h
 main_mcu\lv_tlsf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_tlsf.o: lvgl\src\misc\../lv_conf_kconfig.h
-main_mcu\lv_tlsf.o: .\lvgl\lv_conf.h
+main_mcu\lv_tlsf.o: ./lvgl/lv_conf.h
 main_mcu\lv_tlsf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 main_mcu\lv_tlsf.o: lvgl\src\misc\lv_tlsf.h
 main_mcu\lv_tlsf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

@@ -4,7 +4,7 @@ main_mcu\lv_gpu_arm2d.o: lvgl\src\draw\arm2d\../../misc/lv_color.h
 main_mcu\lv_gpu_arm2d.o: lvgl\src\draw\arm2d\../../misc/../lv_conf_internal.h
 main_mcu\lv_gpu_arm2d.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_gpu_arm2d.o: lvgl\src\draw\arm2d\../../misc/../lv_conf_kconfig.h
-main_mcu\lv_gpu_arm2d.o: .\lvgl\lv_conf.h
+main_mcu\lv_gpu_arm2d.o: ./lvgl/lv_conf.h
 main_mcu\lv_gpu_arm2d.o: lvgl\src\draw\arm2d\../../misc/lv_assert.h
 main_mcu\lv_gpu_arm2d.o: lvgl\src\draw\arm2d\../../misc/lv_log.h
 main_mcu\lv_gpu_arm2d.o: lvgl\src\draw\arm2d\../../misc/lv_types.h

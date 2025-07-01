@@ -3,7 +3,7 @@ main_mcu\lv_img_decoder.o: lvgl\src\draw\lv_img_decoder.h
 main_mcu\lv_img_decoder.o: lvgl\src\draw\../lv_conf_internal.h
 main_mcu\lv_img_decoder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_img_decoder.o: lvgl\src\draw\../lv_conf_kconfig.h
-main_mcu\lv_img_decoder.o: .\lvgl\lv_conf.h
+main_mcu\lv_img_decoder.o: ./lvgl/lv_conf.h
 main_mcu\lv_img_decoder.o: lvgl\src\draw\lv_img_buf.h
 main_mcu\lv_img_decoder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 main_mcu\lv_img_decoder.o: lvgl\src\draw\../misc/lv_color.h

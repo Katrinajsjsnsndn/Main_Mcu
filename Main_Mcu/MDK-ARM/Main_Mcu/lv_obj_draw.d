@@ -4,7 +4,7 @@ main_mcu\lv_obj_draw.o: lvgl\src\core\../draw/lv_draw.h
 main_mcu\lv_obj_draw.o: lvgl\src\core\../draw/../lv_conf_internal.h
 main_mcu\lv_obj_draw.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_obj_draw.o: lvgl\src\core\../draw/../lv_conf_kconfig.h
-main_mcu\lv_obj_draw.o: .\lvgl\lv_conf.h
+main_mcu\lv_obj_draw.o: ./lvgl/lv_conf.h
 main_mcu\lv_obj_draw.o: lvgl\src\core\../draw/../misc/lv_style.h
 main_mcu\lv_obj_draw.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 main_mcu\lv_obj_draw.o: lvgl\src\core\../draw/../misc/../font/lv_font.h

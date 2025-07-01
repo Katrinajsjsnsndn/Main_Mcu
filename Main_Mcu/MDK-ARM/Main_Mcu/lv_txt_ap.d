@@ -4,7 +4,7 @@ main_mcu\lv_txt_ap.o: lvgl\src\misc\lv_bidi.h
 main_mcu\lv_txt_ap.o: lvgl\src\misc\../lv_conf_internal.h
 main_mcu\lv_txt_ap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_txt_ap.o: lvgl\src\misc\../lv_conf_kconfig.h
-main_mcu\lv_txt_ap.o: .\lvgl\lv_conf.h
+main_mcu\lv_txt_ap.o: ./lvgl/lv_conf.h
 main_mcu\lv_txt_ap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 main_mcu\lv_txt_ap.o: lvgl\src\misc\lv_txt.h
 main_mcu\lv_txt_ap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

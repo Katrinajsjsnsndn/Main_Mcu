@@ -3,7 +3,7 @@ main_mcu\lv_hal_indev.o: lvgl\src\hal\../misc/lv_assert.h
 main_mcu\lv_hal_indev.o: lvgl\src\hal\../misc/../lv_conf_internal.h
 main_mcu\lv_hal_indev.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_hal_indev.o: lvgl\src\hal\../misc/../lv_conf_kconfig.h
-main_mcu\lv_hal_indev.o: .\lvgl\lv_conf.h
+main_mcu\lv_hal_indev.o: ./lvgl/lv_conf.h
 main_mcu\lv_hal_indev.o: lvgl\src\hal\../misc/lv_log.h
 main_mcu\lv_hal_indev.o: lvgl\src\hal\../misc/lv_types.h
 main_mcu\lv_hal_indev.o: lvgl\src\hal\../misc/lv_mem.h

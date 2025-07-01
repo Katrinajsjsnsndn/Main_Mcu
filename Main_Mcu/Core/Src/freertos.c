@@ -25,11 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "rs485.h"
 
-#include "OLED.h"
-#include "lcd.h"
-#include "test code.h"
 #include "lvgl.h" 
 #include "lv_port_disp_template.h"
 
@@ -54,30 +50,22 @@
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
-/* Definitions for defaultTask */
-osThreadId_t defaultTaskHandle;
-const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
-};
-/* Definitions for myTask02 */
-osThreadId_t myTask02Handle;
-const osThreadAttr_t myTask02_attributes = {
-  .name = "myTask02",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
-};
+osThreadId defaultTaskHandle;
+osThreadId LVGL_TASKHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 
+
 /* USER CODE END FunctionPrototypes */
 
-void StartDefaultTask(void *argument);
-void StartTask02(void *argument);
+void StartDefaultTask(void const * argument);
+void lvgl_task(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+
+/* GetIdleTaskMemory prototype (linked to static allocation support) */
+void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize );
 
 /* Hook prototypes */
 void vApplicationTickHook(void);
@@ -93,6 +81,19 @@ void vApplicationTickHook( void )
 	lv_tick_inc(1);         //lvgl heart beat
 }
 /* USER CODE END 3 */
+
+/* USER CODE BEGIN GET_IDLE_TASK_MEMORY */
+static StaticTask_t xIdleTaskTCBBuffer;
+static StackType_t xIdleStack[configMINIMAL_STACK_SIZE];
+
+void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize )
+{
+  *ppxIdleTaskTCBBuffer = &xIdleTaskTCBBuffer;
+  *ppxIdleTaskStackBuffer = &xIdleStack[0];
+  *pulIdleTaskStackSize = configMINIMAL_STACK_SIZE;
+  /* place for user code */
+}
+/* USER CODE END GET_IDLE_TASK_MEMORY */
 
 /**
   * @brief  FreeRTOS initialization
@@ -121,19 +122,19 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+  /* definition and creation of defaultTask */
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
-  /* creation of myTask02 */
-  myTask02Handle = osThreadNew(StartTask02, NULL, &myTask02_attributes);
+  /* definition and creation of LVGL_TASK */
+  osThreadDef(LVGL_TASK, lvgl_task, osPriorityNormal, 0, 128);
+  LVGL_TASKHandle = osThreadCreate(osThread(LVGL_TASK), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
+	
 
-  /* USER CODE BEGIN RTOS_EVENTS */
-  /* add events, ... */
-  /* USER CODE END RTOS_EVENTS */
+  /* USER CODE END RTOS_THREADS */
 
 }
 
@@ -144,7 +145,7 @@ void MX_FREERTOS_Init(void) {
   * @retval None
   */
 /* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void *argument)
+void StartDefaultTask(void const * argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
 
@@ -157,63 +158,28 @@ void StartDefaultTask(void *argument)
   /* USER CODE END StartDefaultTask */
 }
 
-/* USER CODE BEGIN Header_StartTask02 */
+/* USER CODE BEGIN Header_lvgl_task */
 /**
-* @brief Function implementing the myTask02 thread.
+* @brief Function implementing the LVGL_TASK thread.
 * @param argument: Not used
 * @retval None
 */
+/* USER CODE END Header_lvgl_task */
 
 
-
-
-/* Input device driver initialization */
-
-/* USER CODE END Header_StartTask02 */
-__weak void StartTask02(void *argument)
+/* Private application code --------------------------------------------------*/
+/* USER CODE BEGIN Application */
+void Led_task(void *argument)
 {
   /* USER CODE BEGIN StartTask02 */
-		LCD_Init();			   	//��ʼ��LCD 	
-		LCD_Display_Dir(USE_LCM_DIR);		 		//��Ļ����
-
-		LCD_Clear(WHITE);		//����
-//		LCD_DrawRectangle(40,40,280,150);
-//	  osDelay(5);
-//		LCD_DrawRectangle(230,160,280,190);
-//		osDelay(5);
-
-//		LCD_DrawRectangle(40,160,90,190);
-
-//	main_test("IC:ST7789");		  //������ҳ
-//	Color_Test();								//��ɫ����
-//	Read_Test();								//����ɫ����
-//	FillRec_Test();							//ͼ�β���
-//	English_Font_test();				//Ӣ�Ĳ���
-//	Chinese_Font_test();				//���Ĳ���
-//	Pic_test();									//ͼƬ����
-//	Switch_test();							//��ʾ���ز���
-//	Rotate_Test();							//��ת����
-	lv_init();
-	lv_port_disp_init();
-	lv_obj_t* btn = lv_btn_create(lv_scr_act()); 
-	lv_obj_set_pos(btn, 100, 100);
-	lv_obj_set_size(btn, 120, 50);
-	lv_obj_t* label = lv_label_create(btn);
-	lv_label_set_text(label, "Button");
-	lv_obj_center(label);
+		
  /* Infinite loop */
   for(;;)
   {
 		      
-		//RS485_Master_SendReadCmd(0x01);
-		lv_task_handler(); // 处理LVGL任务
-    osDelay(5);
+    osDelay(2);
   }
   /* USER CODE END StartTask02 */
 }
 
-/* Private application code --------------------------------------------------*/
-/* USER CODE BEGIN Application */
-
 /* USER CODE END Application */
-

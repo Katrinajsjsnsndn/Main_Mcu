@@ -4,7 +4,7 @@ main_mcu\lv_gpu_d2_ra6m3.o: lvgl\src\draw\renesas\../../misc/lv_color.h
 main_mcu\lv_gpu_d2_ra6m3.o: lvgl\src\draw\renesas\../../misc/../lv_conf_internal.h
 main_mcu\lv_gpu_d2_ra6m3.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_gpu_d2_ra6m3.o: lvgl\src\draw\renesas\../../misc/../lv_conf_kconfig.h
-main_mcu\lv_gpu_d2_ra6m3.o: .\lvgl\lv_conf.h
+main_mcu\lv_gpu_d2_ra6m3.o: ./lvgl/lv_conf.h
 main_mcu\lv_gpu_d2_ra6m3.o: lvgl\src\draw\renesas\../../misc/lv_assert.h
 main_mcu\lv_gpu_d2_ra6m3.o: lvgl\src\draw\renesas\../../misc/lv_log.h
 main_mcu\lv_gpu_d2_ra6m3.o: lvgl\src\draw\renesas\../../misc/lv_types.h

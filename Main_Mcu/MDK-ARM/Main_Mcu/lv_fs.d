@@ -3,7 +3,7 @@ main_mcu\lv_fs.o: lvgl\src\misc\lv_fs.h
 main_mcu\lv_fs.o: lvgl\src\misc\../lv_conf_internal.h
 main_mcu\lv_fs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_fs.o: lvgl\src\misc\../lv_conf_kconfig.h
-main_mcu\lv_fs.o: .\lvgl\lv_conf.h
+main_mcu\lv_fs.o: ./lvgl/lv_conf.h
 main_mcu\lv_fs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 main_mcu\lv_fs.o: lvgl\src\misc\../misc/lv_assert.h
 main_mcu\lv_fs.o: lvgl\src\misc\../misc/lv_log.h

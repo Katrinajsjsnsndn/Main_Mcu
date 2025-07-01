@@ -3,7 +3,7 @@ main_mcu\lv_lru.o: lvgl\src\misc\lv_lru.h
 main_mcu\lv_lru.o: lvgl\src\misc\../lv_conf_internal.h
 main_mcu\lv_lru.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 main_mcu\lv_lru.o: lvgl\src\misc\../lv_conf_kconfig.h
-main_mcu\lv_lru.o: .\lvgl\lv_conf.h
+main_mcu\lv_lru.o: ./lvgl/lv_conf.h
 main_mcu\lv_lru.o: lvgl\src\misc\lv_types.h
 main_mcu\lv_lru.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 main_mcu\lv_lru.o: lvgl\src\misc\lv_math.h
