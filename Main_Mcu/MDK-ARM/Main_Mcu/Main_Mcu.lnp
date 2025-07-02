@@ -209,6 +209,14 @@
 "main_mcu\lv_win.o"
 "main_mcu\lv_extra.o"
 "main_mcu\lvgl_task.o"
+"main_mcu\custom.o"
+"main_mcu\lv_font_montserratmedium_12.o"
+"main_mcu\lv_font_montserratmedium_16.o"
+"main_mcu\_1663864903058_alpha_52x56.o"
+"main_mcu\events_init.o"
+"main_mcu\gui_guider.o"
+"main_mcu\setup_scr_screen.o"
+"main_mcu\widgets_init.o"
 --strict --scatter "Main_Mcu\Main_Mcu.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

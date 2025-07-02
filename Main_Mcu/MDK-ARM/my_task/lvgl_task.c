@@ -36,7 +36,7 @@ void lv_demo_task(void *pvParameters);  /* 任务函数 */
 TaskHandle_t LEDTask_Handler;           /* 任务句柄 */
 void led_task(void *pvParameters);      /* 任务函数 */
 /******************************************************************************************************/
-
+lv_ui guider_ui;
 void lvgl_task()
 {
 		Lvgl_init();
@@ -91,30 +91,8 @@ void start_task(void *pvParameters)
 void lv_demo_task(void *pvParameters)
 {
     pvParameters = pvParameters;
-    
-   /* 获取屏幕对象 */
-    lv_obj_t * scr = lv_scr_act();
-
-    /* 创建左侧按钮 */
-    lv_obj_t * btn_left = lv_btn_create(scr);               /* 在当前屏幕上创建一个按钮 */
-    lv_obj_set_pos(btn_left, 50, 50);    /* 设置按钮的位置 */
-    lv_obj_set_size(btn_left, 60, 30);                     /* 设置按钮的大小 */
-
-    /* 创建左侧按钮的标签 */
-    lv_obj_t * label_left = lv_label_create(btn_left);      /* 在按钮上创建一个标签 */
-    lv_label_set_text(label_left, "run");              /* 设置标签的文本为“左侧按钮” */
-    lv_obj_align(label_left, LV_ALIGN_CENTER, 0, 0);        /* 将标签对齐到按钮的中心 */
-
-
-    /* 创建右侧按钮 */
-    lv_obj_t * btn_right = lv_btn_create(scr);              /* 在当前屏幕上创建一个按钮 */
-    lv_obj_set_pos(btn_right, 150, 50); /* 设置按钮的位置 */
-    lv_obj_set_size(btn_right, 60, 30);                    /* 设置按钮的大小 */
-
-    /* 创建右侧按钮的标签 */
-    lv_obj_t * label_right = lv_label_create(btn_right);    /* 在按钮上创建一个标签 */
-    lv_label_set_text(label_right, "stop");             /* 设置标签的文本为“右侧按钮” */
-    lv_obj_align(label_right, LV_ALIGN_CENTER, 0, 0);       /* 将标签对齐到按钮的中心 */
+		setup_ui(&guider_ui);
+		events_init(&guider_ui);
     while(1)
     {
         lv_timer_handler(); /* LVGL计时器 */

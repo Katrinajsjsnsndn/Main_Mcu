@@ -1,0 +1,32 @@
+!!! 警告 !!!
+
+存在未解决的依赖项，请手动添加它们 !, 完成添加后，请删除该文件，避免再次弹出提示。
+
+项目位置：'e:\Desktop\My_Project\Main_Mcu\MDK-ARM\Main_Mcu.code-workspace'
+
+---
+
+FileName: 'lv_cmsis_pack.c'
+	Class:     'LVGL'
+	Category:  'sourceC'
+	Location:  'RTE/LVGL/lv_cmsis_pack.c'
+
+FileName: 'lv_conf_cmsis.h'
+	Class:     'LVGL'
+	Category:  'preIncludeGlobal'
+	Location:  'RTE/LVGL/lv_conf_cmsis.h'
+
+FileName: 'examples\porting\lv_port_disp_template.c'
+	Class:     'LVGL'
+	Category:  'sourceC'
+	Location:  'RTE/LVGL/lv_port_disp_template.c'
+
+FileName: 'examples\porting\lv_port_fs_template.c'
+	Class:     'LVGL'
+	Category:  'sourceC'
+	Location:  'RTE/LVGL/lv_port_fs_template.c'
+
+FileName: 'examples\porting\lv_port_indev_template.c'
+	Class:     'LVGL'
+	Category:  'sourceC'
+	Location:  'RTE/LVGL/lv_port_indev_template.c'

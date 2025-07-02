@@ -162,4 +162,6 @@ main_mcu\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_
 main_mcu\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 main_mcu\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 main_mcu\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+main_mcu\lv_port_disp_template.o: .\ui_text\src\custom\../generated/gui_guider.h
+main_mcu\lv_port_disp_template.o: .\ui_text\src\custom\../generated/events_init.h
 main_mcu\lv_port_disp_template.o: ./bsp/struct_typedef.h

@@ -32,6 +32,8 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "../generated/gui_guider.h"
+#include "../generated/events_init.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

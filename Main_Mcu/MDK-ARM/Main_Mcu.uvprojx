@@ -340,7 +340,7 @@
               <MiscControls>--diag_suppress=188,546,68,111</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./rs485;./bsp;./oled;./lcd;./lvgl/src;./lvgl/examples/porting;./lvgl;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;.\my_task</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./rs485;./bsp;./oled;./lcd;./lvgl/src;./lvgl/examples/porting;./lvgl;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;.\my_task;.\ui_text\src\custom;.\ui_text\src\generated</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1737,6 +1737,81 @@
               <FileName>lvgl_task.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\my_task\lvgl_task.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>ui_text</GroupName>
+          <Files>
+            <File>
+              <FileName>custom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ui_text\src\custom\custom.c</FilePath>
+            </File>
+            <File>
+              <FileName>custom.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ui_text\src\custom\custom.h</FilePath>
+            </File>
+            <File>
+              <FileName>lv_conf_ext.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ui_text\src\custom\lv_conf_ext.h</FilePath>
+            </File>
+            <File>
+              <FileName>guider_customer_fonts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ui_text\src\generated\guider_customer_fonts\guider_customer_fonts.h</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ui_text\src\generated\guider_fonts\lv_font_montserratMedium_12.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ui_text\src\generated\guider_fonts\lv_font_montserratMedium_16.c</FilePath>
+            </File>
+            <File>
+              <FileName>_1663864903058_alpha_52x56.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ui_text\src\generated\images\_1663864903058_alpha_52x56.c</FilePath>
+            </File>
+            <File>
+              <FileName>events_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ui_text\src\generated\events_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>events_init.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ui_text\src\generated\events_init.h</FilePath>
+            </File>
+            <File>
+              <FileName>gui_guider.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ui_text\src\generated\gui_guider.c</FilePath>
+            </File>
+            <File>
+              <FileName>gui_guider.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ui_text\src\generated\gui_guider.h</FilePath>
+            </File>
+            <File>
+              <FileName>setup_scr_screen.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ui_text\src\generated\setup_scr_screen.c</FilePath>
+            </File>
+            <File>
+              <FileName>widgets_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ui_text\src\generated\widgets_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>widgets_init.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ui_text\src\generated\widgets_init.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,0 +1,1 @@
+main_mcu\_1663864903058_alpha_52x56_1.o: ui_text\src\generated\images\_1663864903058_alpha_52x56.c

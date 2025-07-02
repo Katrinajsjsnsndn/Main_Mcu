@@ -47,8 +47,7 @@ main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-main_mcu\lvgl_task.o: ./bsp/struct_typedef.h
-main_mcu\lvgl_task.o: ./lcd/test code.h
+main_mcu\lvgl_task.o: .\ui_text\src\custom\../generated/gui_guider.h
 main_mcu\lvgl_task.o: ./lvgl/src/lvgl.h
 main_mcu\lvgl_task.o: ./lvgl/src/../lvgl.h
 main_mcu\lvgl_task.o: ./lvgl/src/../src/misc/lv_log.h
@@ -178,4 +177,7 @@ main_mcu\lvgl_task.o: ./lvgl/src/../src/extra/widgets/colorwheel/lv_colorwheel.h
 main_mcu\lvgl_task.o: ./lvgl/src/../src/extra/widgets/led/lv_led.h
 main_mcu\lvgl_task.o: ./lvgl/src/../src/extra/widgets/imgbtn/lv_imgbtn.h
 main_mcu\lvgl_task.o: ./lvgl/src/../src/extra/widgets/span/lv_span.h
+main_mcu\lvgl_task.o: .\ui_text\src\custom\../generated/events_init.h
+main_mcu\lvgl_task.o: ./bsp/struct_typedef.h
+main_mcu\lvgl_task.o: ./lcd/test code.h
 main_mcu\lvgl_task.o: ./lvgl/examples/porting/lv_port_disp_template.h
