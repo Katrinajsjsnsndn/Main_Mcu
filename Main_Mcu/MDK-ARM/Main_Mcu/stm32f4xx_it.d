@@ -23,6 +23,8 @@ main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac.h
+main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -31,7 +33,7 @@ main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_e
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 main_mcu\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-main_mcu\stm32f4xx_it.o: .\ui_text\src\custom\../generated/gui_guider.h
+main_mcu\stm32f4xx_it.o: ./ui_text/src/custom/../generated/gui_guider.h
 main_mcu\stm32f4xx_it.o: ./lvgl/src/lvgl.h
 main_mcu\stm32f4xx_it.o: ./lvgl/src/../lvgl.h
 main_mcu\stm32f4xx_it.o: ./lvgl/src/../src/misc/lv_log.h
@@ -161,6 +163,6 @@ main_mcu\stm32f4xx_it.o: ./lvgl/src/../src/extra/widgets/colorwheel/lv_colorwhee
 main_mcu\stm32f4xx_it.o: ./lvgl/src/../src/extra/widgets/led/lv_led.h
 main_mcu\stm32f4xx_it.o: ./lvgl/src/../src/extra/widgets/imgbtn/lv_imgbtn.h
 main_mcu\stm32f4xx_it.o: ./lvgl/src/../src/extra/widgets/span/lv_span.h
-main_mcu\stm32f4xx_it.o: .\ui_text\src\custom\../generated/events_init.h
+main_mcu\stm32f4xx_it.o: ./ui_text/src/custom/../generated/events_init.h
 main_mcu\stm32f4xx_it.o: ./bsp/struct_typedef.h
 main_mcu\stm32f4xx_it.o: ../Core/Inc/stm32f4xx_it.h

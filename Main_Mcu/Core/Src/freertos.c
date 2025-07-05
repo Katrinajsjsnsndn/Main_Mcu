@@ -165,7 +165,16 @@ void StartDefaultTask(void const * argument)
 * @retval None
 */
 /* USER CODE END Header_lvgl_task */
-
+__weak void lvgl_task(void const * argument)
+{
+  /* USER CODE BEGIN lvgl_task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END lvgl_task */
+}
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */

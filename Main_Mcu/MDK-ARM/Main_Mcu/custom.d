@@ -132,4 +132,4 @@ main_mcu\custom.o: ./lvgl/src/../src/extra/widgets/led/lv_led.h
 main_mcu\custom.o: ./lvgl/src/../src/extra/widgets/imgbtn/lv_imgbtn.h
 main_mcu\custom.o: ./lvgl/src/../src/extra/widgets/span/lv_span.h
 main_mcu\custom.o: ui_text\src\custom\custom.h
-main_mcu\custom.o: .\ui_text\src\generated\gui_guider.h
+main_mcu\custom.o: ./ui_text/src/generated/gui_guider.h

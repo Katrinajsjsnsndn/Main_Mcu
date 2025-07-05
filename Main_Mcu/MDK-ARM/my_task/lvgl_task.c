@@ -111,8 +111,8 @@ void led_task(void *pvParameters)
     
     while(1)
     {
-        //LED0_TOGGLE();
-        vTaskDelay(5);
+				HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_2);
+        vTaskDelay(200);
     }
 }
 void Lvgl_init()

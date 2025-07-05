@@ -134,4 +134,4 @@ main_mcu\setup_scr_screen.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 main_mcu\setup_scr_screen.o: ui_text\src\generated\gui_guider.h
 main_mcu\setup_scr_screen.o: ui_text\src\generated\events_init.h
 main_mcu\setup_scr_screen.o: ui_text\src\generated\widgets_init.h
-main_mcu\setup_scr_screen.o: .\ui_text\src\custom\custom.h
+main_mcu\setup_scr_screen.o: ./ui_text/src/custom/custom.h

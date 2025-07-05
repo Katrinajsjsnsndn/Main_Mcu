@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "dac.h"
 #include "dma.h"
 #include "usart.h"
 #include "gpio.h"
@@ -62,6 +63,9 @@ uint8_t receive_data_R[80];
 uint8_t rxBuffer[50];
 uint8_t rxIndex = 0;
 uint8_t frameReceived = 0;
+
+float current=0.1;
+uint16_t dac_set;
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -101,6 +105,7 @@ int main(void)
   MX_DMA_Init();
   MX_USART3_UART_Init();
   MX_USART1_UART_Init();
+  MX_DAC_Init();
   /* USER CODE BEGIN 2 */
 
    __HAL_UART_ENABLE_IT(&huart3, UART_IT_IDLE);
@@ -110,6 +115,10 @@ int main(void)
 	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,0);
 	 
 	 
+	 	dac_set=4095*((current/5.0f)/2.1f);
+	  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, dac_set);//(x/4096)*2.1v
+    HAL_DAC_Start(&hdac, DAC_CHANNEL_1);
+	 
 	 
 
 		lvgl_task();
@@ -117,10 +126,10 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in cmsis_os2.c) */
-//  MX_FREERTOS_Init();
+  MX_FREERTOS_Init();
 
-//  /* Start scheduler */
-//  osKernelStart();
+  /* Start scheduler */
+  osKernelStart();
 
   /* We should never get here as control is now taken by the scheduler */
 
