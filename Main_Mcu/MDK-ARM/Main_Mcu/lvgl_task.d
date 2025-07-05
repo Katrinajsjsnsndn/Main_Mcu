@@ -39,6 +39,9 @@ main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h
 main_mcu\lvgl_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
@@ -183,3 +186,5 @@ main_mcu\lvgl_task.o: ./ui_text/src/custom/../generated/events_init.h
 main_mcu\lvgl_task.o: ./bsp/struct_typedef.h
 main_mcu\lvgl_task.o: ./lcd/test code.h
 main_mcu\lvgl_task.o: ./lvgl/examples/porting/lv_port_disp_template.h
+main_mcu\lvgl_task.o: ../Core/Inc/adc.h
+main_mcu\lvgl_task.o: ../Core/Inc/dac.h

@@ -23,6 +23,9 @@ main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac.h
 main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h
 main_mcu\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
@@ -179,6 +182,7 @@ main_mcu\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 main_mcu\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 main_mcu\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 main_mcu\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+main_mcu\main.o: ../Core/Inc/adc.h
 main_mcu\main.o: ../Core/Inc/dac.h
 main_mcu\main.o: ../Core/Inc/dma.h
 main_mcu\main.o: ../Core/Inc/usart.h

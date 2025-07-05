@@ -8,7 +8,12 @@
 #include "lv_port_disp_template.h"
 #include "semphr.h"
 
+#include "adc.h"
+#include "dac.h"
 
+
+extern float current;
+extern uint16_t dac_set;
 /******************************************************************************************************/
 /*FreeRTOS配置*/
 
@@ -35,6 +40,11 @@ void lv_demo_task(void *pvParameters);  /* 任务函数 */
 #define LED_STK_SIZE        128         /* 任务堆栈大小 */
 TaskHandle_t LEDTask_Handler;           /* 任务句柄 */
 void led_task(void *pvParameters);      /* 任务函数 */
+
+
+
+uint16_t Get_ADC(void);
+
 /******************************************************************************************************/
 lv_ui guider_ui;
 void lvgl_task()
@@ -105,15 +115,50 @@ void lv_demo_task(void *pvParameters)
  * @param       pvParameters : 传入参数(未用到)
  * @retval      无
  */
+uint16_t read_adc;
+
 void led_task(void *pvParameters)
 {
     pvParameters = pvParameters;
     
     while(1)
     {
+			
+			  read_adc= Get_ADC();
+
 				HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_2);
-        vTaskDelay(200);
+        vTaskDelay(10);
     }
+}
+
+
+uint16_t Get_ADC(void)
+{
+    uint16_t adc_value = 0;
+
+    // 1. 启动ADC转换
+    HAL_ADC_Start(&hadc1);
+
+    // 2. 等待转换完成
+    if (HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY) == HAL_OK)
+    {
+        // 3. 获取转换结果
+        adc_value = HAL_ADC_GetValue(&hadc1);
+    }
+
+    // 4. 停止ADC
+    HAL_ADC_Stop(&hadc1);
+		return adc_value;
+}
+
+void Current_Set()
+{
+ 	dac_set=4095*((current/5.0f)/2.1f);
+	  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, dac_set);//(x/4096)*2.1v
+    HAL_DAC_Start(&hdac, DAC_CHANNEL_1);
+	 
+
+
 }
 void Lvgl_init()
 {
